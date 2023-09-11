@@ -79,6 +79,7 @@ class BreedListViewModel: ObservableObject {
         } catch {
             print("Error while trying to truncate breed table")
         }
+        print("Existing breeds successfuly deleted")
         
         for breedName in breedNames {
             let breedEntity = NSEntityDescription.entity(forEntityName: String(describing: Breed.self), in: context)!
@@ -90,5 +91,6 @@ class BreedListViewModel: ObservableObject {
         } catch {
             print("Error while trying to save the breed")
         }
+        print("Breeds successfuly created")
     }
 }

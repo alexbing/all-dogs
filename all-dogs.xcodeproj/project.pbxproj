@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2294A5672AAEFA97001A76DA /* all_dogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5662AAEFA97001A76DA /* all_dogsApp.swift */; };
-		2294A5692AAEFA97001A76DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5682AAEFA97001A76DA /* ContentView.swift */; };
 		2294A56B2AAEFA98001A76DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2294A56A2AAEFA98001A76DA /* Assets.xcassets */; };
-		2294A56E2AAEFA98001A76DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2294A56D2AAEFA98001A76DA /* Preview Assets.xcassets */; };
-		2294A5702AAEFA98001A76DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A56F2AAEFA98001A76DA /* Persistence.swift */; };
 		2294A5732AAEFA98001A76DA /* all_dogs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5712AAEFA98001A76DA /* all_dogs.xcdatamodeld */; };
 		2294A57D2AAEFA99001A76DA /* all_dogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A57C2AAEFA99001A76DA /* all_dogsTests.swift */; };
 		2294A5872AAEFA99001A76DA /* all_dogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5862AAEFA99001A76DA /* all_dogsUITests.swift */; };
 		2294A5892AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5882AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift */; };
 		2294A5972AAF07E1001A76DA /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5962AAF07E1001A76DA /* BreedListView.swift */; };
-		2294A59A2AAF08A8001A76DA /* DogResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5992AAF08A8001A76DA /* DogResource.swift */; };
+		2294A59A2AAF08A8001A76DA /* ImageListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5992AAF08A8001A76DA /* ImageListResource.swift */; };
 		2294A59D2AAF09DF001A76DA /* BreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A59C2AAF09DF001A76DA /* BreedListViewModel.swift */; };
 		2294A59F2AAF167B001A76DA /* DogImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A59E2AAF167B001A76DA /* DogImageListView.swift */; };
 		2294A5A12AAF17F3001A76DA /* DogImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5A02AAF17F3001A76DA /* DogImageListViewModel.swift */; };
+		2294A5A62AAF3CB7001A76DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5A52AAF3CB7001A76DA /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +41,7 @@
 /* Begin PBXFileReference section */
 		2294A5632AAEFA97001A76DA /* all-dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "all-dogs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2294A5662AAEFA97001A76DA /* all_dogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsApp.swift; sourceTree = "<group>"; };
-		2294A5682AAEFA97001A76DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2294A56A2AAEFA98001A76DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2294A56D2AAEFA98001A76DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2294A56F2AAEFA98001A76DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2294A5722AAEFA98001A76DA /* all_dogs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = all_dogs.xcdatamodel; sourceTree = "<group>"; };
 		2294A5782AAEFA99001A76DA /* all-dogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "all-dogsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2294A57C2AAEFA99001A76DA /* all_dogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsTests.swift; sourceTree = "<group>"; };
@@ -54,10 +49,11 @@
 		2294A5862AAEFA99001A76DA /* all_dogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsUITests.swift; sourceTree = "<group>"; };
 		2294A5882AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2294A5962AAF07E1001A76DA /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
-		2294A5992AAF08A8001A76DA /* DogResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResource.swift; sourceTree = "<group>"; };
+		2294A5992AAF08A8001A76DA /* ImageListResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListResource.swift; sourceTree = "<group>"; };
 		2294A59C2AAF09DF001A76DA /* BreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewModel.swift; sourceTree = "<group>"; };
 		2294A59E2AAF167B001A76DA /* DogImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageListView.swift; sourceTree = "<group>"; };
 		2294A5A02AAF17F3001A76DA /* DogImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageListViewModel.swift; sourceTree = "<group>"; };
+		2294A5A52AAF3CB7001A76DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,19 +110,9 @@
 				2294A5952AAF0799001A76DA /* View */,
 				2294A5662AAEFA97001A76DA /* all_dogsApp.swift */,
 				2294A56A2AAEFA98001A76DA /* Assets.xcassets */,
-				2294A56F2AAEFA98001A76DA /* Persistence.swift */,
 				2294A5712AAEFA98001A76DA /* all_dogs.xcdatamodeld */,
-				2294A56C2AAEFA98001A76DA /* Preview Content */,
 			);
 			path = "all-dogs";
-			sourceTree = "<group>";
-		};
-		2294A56C2AAEFA98001A76DA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2294A56D2AAEFA98001A76DA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		2294A57B2AAEFA99001A76DA /* all-dogsTests */ = {
@@ -149,7 +135,6 @@
 		2294A5952AAF0799001A76DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2294A5682AAEFA97001A76DA /* ContentView.swift */,
 				2294A5962AAF07E1001A76DA /* BreedListView.swift */,
 				2294A59E2AAF167B001A76DA /* DogImageListView.swift */,
 			);
@@ -159,7 +144,7 @@
 		2294A5982AAF086A001A76DA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2294A5992AAF08A8001A76DA /* DogResource.swift */,
+				2294A5992AAF08A8001A76DA /* ImageListResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -176,6 +161,7 @@
 		2294A5A22AAF2A74001A76DA /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				2294A5A52AAF3CB7001A76DA /* Persistence.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -284,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2294A56E2AAEFA98001A76DA /* Preview Assets.xcassets in Resources */,
 				2294A56B2AAEFA98001A76DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,13 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2294A5A62AAF3CB7001A76DA /* Persistence.swift in Sources */,
 				2294A5A12AAF17F3001A76DA /* DogImageListViewModel.swift in Sources */,
 				2294A59F2AAF167B001A76DA /* DogImageListView.swift in Sources */,
 				2294A59D2AAF09DF001A76DA /* BreedListViewModel.swift in Sources */,
-				2294A59A2AAF08A8001A76DA /* DogResource.swift in Sources */,
-				2294A5702AAEFA98001A76DA /* Persistence.swift in Sources */,
+				2294A59A2AAF08A8001A76DA /* ImageListResource.swift in Sources */,
 				2294A5972AAF07E1001A76DA /* BreedListView.swift in Sources */,
-				2294A5692AAEFA97001A76DA /* ContentView.swift in Sources */,
 				2294A5732AAEFA98001A76DA /* all_dogs.xcdatamodeld in Sources */,
 				2294A5672AAEFA97001A76DA /* all_dogsApp.swift in Sources */,
 			);
@@ -477,7 +461,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"all-dogs/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -509,7 +492,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"all-dogs/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

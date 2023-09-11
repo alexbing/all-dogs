@@ -28,9 +28,3 @@ struct DogImageListView: View {
         
     }
 }
-//
-//struct DogImageListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DogImageListView()
-//    }
-//}
