@@ -16,6 +16,9 @@
 		2294A57D2AAEFA99001A76DA /* all_dogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A57C2AAEFA99001A76DA /* all_dogsTests.swift */; };
 		2294A5872AAEFA99001A76DA /* all_dogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5862AAEFA99001A76DA /* all_dogsUITests.swift */; };
 		2294A5892AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5882AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift */; };
+		2294A5972AAF07E1001A76DA /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5962AAF07E1001A76DA /* BreedListView.swift */; };
+		2294A59A2AAF08A8001A76DA /* DogResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A5992AAF08A8001A76DA /* DogResource.swift */; };
+		2294A59D2AAF09DF001A76DA /* BreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294A59C2AAF09DF001A76DA /* BreedListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		2294A5822AAEFA99001A76DA /* all-dogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "all-dogsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2294A5862AAEFA99001A76DA /* all_dogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsUITests.swift; sourceTree = "<group>"; };
 		2294A5882AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_dogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2294A5962AAF07E1001A76DA /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
+		2294A5992AAF08A8001A76DA /* DogResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResource.swift; sourceTree = "<group>"; };
+		2294A59C2AAF09DF001A76DA /* BreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,10 @@
 		2294A5652AAEFA97001A76DA /* all-dogs */ = {
 			isa = PBXGroup;
 			children = (
+				2294A59B2AAF09C6001A76DA /* ViewModel */,
+				2294A5982AAF086A001A76DA /* Resource */,
+				2294A5952AAF0799001A76DA /* View */,
 				2294A5662AAEFA97001A76DA /* all_dogsApp.swift */,
-				2294A5682AAEFA97001A76DA /* ContentView.swift */,
 				2294A56A2AAEFA98001A76DA /* Assets.xcassets */,
 				2294A56F2AAEFA98001A76DA /* Persistence.swift */,
 				2294A5712AAEFA98001A76DA /* all_dogs.xcdatamodeld */,
@@ -131,6 +139,31 @@
 				2294A5882AAEFA99001A76DA /* all_dogsUITestsLaunchTests.swift */,
 			);
 			path = "all-dogsUITests";
+			sourceTree = "<group>";
+		};
+		2294A5952AAF0799001A76DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2294A5682AAEFA97001A76DA /* ContentView.swift */,
+				2294A5962AAF07E1001A76DA /* BreedListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2294A5982AAF086A001A76DA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2294A5992AAF08A8001A76DA /* DogResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2294A59B2AAF09C6001A76DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2294A59C2AAF09DF001A76DA /* BreedListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2294A59D2AAF09DF001A76DA /* BreedListViewModel.swift in Sources */,
+				2294A59A2AAF08A8001A76DA /* DogResource.swift in Sources */,
 				2294A5702AAEFA98001A76DA /* Persistence.swift in Sources */,
+				2294A5972AAF07E1001A76DA /* BreedListView.swift in Sources */,
 				2294A5692AAEFA97001A76DA /* ContentView.swift in Sources */,
 				2294A5732AAEFA98001A76DA /* all_dogs.xcdatamodeld in Sources */,
 				2294A5672AAEFA97001A76DA /* all_dogsApp.swift in Sources */,

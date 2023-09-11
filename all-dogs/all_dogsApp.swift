@@ -13,7 +13,8 @@ struct all_dogsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let breedListViewModel = BreedListViewModel()
+            BreedListView(viewModel: breedListViewModel)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
