@@ -14,3 +14,7 @@ struct BreedListResource: Codable {
 struct BreedResource: Codable {
     let name: String
 }
+
+struct ImageListResource: Codable {
+    let message: [String]
+}

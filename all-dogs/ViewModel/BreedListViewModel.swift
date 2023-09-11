@@ -11,6 +11,8 @@ class BreedListViewModel: ObservableObject {
     @Published var breeds: [String] = []
     
     func fetchBreeds() {
+        // TODO: si pas de réseau ou erreur : retourner le cache
+        
         guard let url = URL(string: "https://dog.ceo/api/breeds/list/all") else { return }
         print("fetching all breeds...")
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -26,6 +28,8 @@ class BreedListViewModel: ObservableObject {
                     name
                 } ?? []
                 
+                self.saveBreeds()
+                
                 DispatchQueue.main.async {
                     self.breeds = breedNames
                 }
@@ -33,5 +37,10 @@ class BreedListViewModel: ObservableObject {
                 print("No breed found")
             }
         }.resume()
+    }
+    
+    // TODO: save in database
+    func saveBreeds() {
+        
     }
 }

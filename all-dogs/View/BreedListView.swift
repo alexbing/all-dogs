@@ -11,10 +11,16 @@ struct BreedListView: View {
     @ObservedObject var viewModel: BreedListViewModel
     
     var body: some View {
-        List(viewModel.breeds, id: \.self) { breed in
-            Text(breed)
-        }.onAppear {
-            viewModel.fetchBreeds()
+        NavigationView {
+            List(viewModel.breeds.sorted(), id: \.self) { breed in
+                NavigationLink {
+                    DogImageListView(viewModel: DogImageListViewModel(breed: breed))
+                } label: {
+                    Text(breed)
+                }
+            }.onAppear {
+                viewModel.fetchBreeds()
+            }
         }
     }
 }
